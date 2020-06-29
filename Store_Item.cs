@@ -21,6 +21,9 @@ namespace InvoiceForm
         public int ItemID { get; set; }
 
         public int ItemQuantity { get; set; }
+
+        [Key]
+        [Column(Order = 3)]
         public int UnitID { get; set; }
 
         public virtual Item Item { get; set; }

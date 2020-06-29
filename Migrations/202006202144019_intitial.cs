@@ -56,17 +56,18 @@
                         ItemQuantity = c.Int(nullable: false),
                         UnitID = c.Int(nullable: false),
                     })
-                .PrimaryKey(t => new { t.StoreID, t.ItemID })
+                .PrimaryKey(t => new { t.StoreID, t.ItemID ,t.UnitID})
                 .ForeignKey("dbo.Item", t => t.ItemID, cascadeDelete: true)
                 .ForeignKey("dbo.Store", t => t.StoreID, cascadeDelete: true)
                 .Index(t => t.StoreID)
-                .Index(t => t.ItemID);
+                .Index(t => t.ItemID)
+                .Index(t=>t.UnitID);
             
             CreateTable(
                 "dbo.Item",
                 c => new
                     {
-                        ItemID = c.Int(nullable: false, identity: true),
+                        ItemID = c.Int(nullable: false),
                         ItemName = c.String(),
                     })
                 .PrimaryKey(t => t.ItemID);

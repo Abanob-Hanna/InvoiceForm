@@ -51,13 +51,13 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.cb_Units = new System.Windows.Forms.ComboBox();
             this.txt_Price = new System.Windows.Forms.TextBox();
             this.txt_Qty = new System.Windows.Forms.TextBox();
             this.txt_Total = new System.Windows.Forms.TextBox();
             this.txt_Discount = new System.Windows.Forms.TextBox();
             this.txt_Net = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.cb_Units = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -117,7 +117,7 @@
             // 
             // btn_Add
             // 
-            this.btn_Add.Location = new System.Drawing.Point(769, 277);
+            this.btn_Add.Location = new System.Drawing.Point(776, 277);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(75, 23);
             this.btn_Add.TabIndex = 8;
@@ -198,14 +198,15 @@
             // 
             // cb_Items
             // 
-            this.cb_Items.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cb_Items.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.cb_Items.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_Items.DropDownWidth = 30;
             this.cb_Items.FormattingEnabled = true;
             this.cb_Items.Items.AddRange(new object[] {
             "Select Item  ..."});
-            this.cb_Items.Location = new System.Drawing.Point(3, 34);
+            this.cb_Items.Location = new System.Drawing.Point(4, 33);
             this.cb_Items.Name = "cb_Items";
-            this.cb_Items.Size = new System.Drawing.Size(116, 21);
+            this.cb_Items.Size = new System.Drawing.Size(93, 21);
             this.cb_Items.TabIndex = 17;
             this.cb_Items.SelectedIndexChanged += new System.EventHandler(this.cb_Items_SelectedIndexChanged);
             // 
@@ -214,14 +215,15 @@
             this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel1.ColumnCount = 7;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.58537F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.41463F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 66F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.7537F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.2463F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
             this.tableLayoutPanel1.Controls.Add(this.label13, 6, 0);
             this.tableLayoutPanel1.Controls.Add(this.label12, 5, 0);
             this.tableLayoutPanel1.Controls.Add(this.label11, 4, 0);
@@ -229,103 +231,91 @@
             this.tableLayoutPanel1.Controls.Add(this.label9, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.cb_Items, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.cb_Units, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.txt_Price, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.txt_Qty, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.txt_Total, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.txt_Discount, 5, 1);
             this.tableLayoutPanel1.Controls.Add(this.txt_Net, 6, 1);
             this.tableLayoutPanel1.Controls.Add(this.label8, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(100, 116);
+            this.tableLayoutPanel1.Controls.Add(this.cb_Units, 1, 1);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(74, 116);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(640, 60);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(696, 59);
             this.tableLayoutPanel1.TabIndex = 18;
             // 
             // label13
             // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(545, 8);
+            this.label13.Location = new System.Drawing.Point(605, 8);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(92, 13);
+            this.label13.Size = new System.Drawing.Size(24, 13);
             this.label13.TabIndex = 26;
             this.label13.Text = "Net";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label12
             // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(465, 8);
+            this.label12.Location = new System.Drawing.Point(505, 8);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(74, 13);
+            this.label12.Size = new System.Drawing.Size(66, 13);
             this.label12.TabIndex = 25;
             this.label12.Text = "Discount (%)";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label11
             // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(376, 8);
+            this.label11.Location = new System.Drawing.Point(405, 8);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(83, 13);
+            this.label11.Size = new System.Drawing.Size(31, 13);
             this.label11.TabIndex = 24;
             this.label11.Text = "Total";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
             // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(285, 8);
+            this.label10.Location = new System.Drawing.Point(305, 8);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(85, 13);
+            this.label10.Size = new System.Drawing.Size(23, 13);
             this.label10.TabIndex = 23;
             this.label10.Text = "Qty";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label9
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(219, 8);
+            this.label9.Location = new System.Drawing.Point(205, 8);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(60, 13);
+            this.label9.Size = new System.Drawing.Size(31, 13);
             this.label9.TabIndex = 22;
             this.label9.Text = "Price";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 8);
+            this.label7.Location = new System.Drawing.Point(4, 8);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(116, 13);
+            this.label7.Size = new System.Drawing.Size(27, 13);
             this.label7.TabIndex = 18;
             this.label7.Text = "Item";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // cb_Units
-            // 
-            this.cb_Units.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cb_Units.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_Units.FormattingEnabled = true;
-            this.cb_Units.Items.AddRange(new object[] {
-            "Select Unit ..."});
-            this.cb_Units.Location = new System.Drawing.Point(125, 34);
-            this.cb_Units.Name = "cb_Units";
-            this.cb_Units.Size = new System.Drawing.Size(88, 21);
-            this.cb_Units.TabIndex = 20;
-            // 
             // txt_Price
             // 
             this.txt_Price.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_Price.Location = new System.Drawing.Point(219, 35);
+            this.txt_Price.Location = new System.Drawing.Point(221, 34);
             this.txt_Price.Name = "txt_Price";
             this.txt_Price.Size = new System.Drawing.Size(60, 20);
             this.txt_Price.TabIndex = 21;
@@ -334,7 +324,7 @@
             // txt_Qty
             // 
             this.txt_Qty.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_Qty.Location = new System.Drawing.Point(285, 35);
+            this.txt_Qty.Location = new System.Drawing.Point(309, 34);
             this.txt_Qty.Name = "txt_Qty";
             this.txt_Qty.Size = new System.Drawing.Size(85, 20);
             this.txt_Qty.TabIndex = 27;
@@ -343,7 +333,7 @@
             // txt_Total
             // 
             this.txt_Total.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_Total.Location = new System.Drawing.Point(376, 35);
+            this.txt_Total.Location = new System.Drawing.Point(410, 34);
             this.txt_Total.Name = "txt_Total";
             this.txt_Total.ReadOnly = true;
             this.txt_Total.Size = new System.Drawing.Size(83, 20);
@@ -352,7 +342,7 @@
             // txt_Discount
             // 
             this.txt_Discount.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_Discount.Location = new System.Drawing.Point(465, 35);
+            this.txt_Discount.Location = new System.Drawing.Point(514, 34);
             this.txt_Discount.Name = "txt_Discount";
             this.txt_Discount.Size = new System.Drawing.Size(74, 20);
             this.txt_Discount.TabIndex = 29;
@@ -361,32 +351,48 @@
             // txt_Net
             // 
             this.txt_Net.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txt_Net.Location = new System.Drawing.Point(547, 35);
+            this.txt_Net.Location = new System.Drawing.Point(605, 34);
             this.txt_Net.Name = "txt_Net";
             this.txt_Net.ReadOnly = true;
-            this.txt_Net.Size = new System.Drawing.Size(88, 20);
+            this.txt_Net.Size = new System.Drawing.Size(87, 20);
             this.txt_Net.TabIndex = 30;
             // 
             // label8
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(125, 8);
+            this.label8.Location = new System.Drawing.Point(104, 8);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 13);
+            this.label8.Size = new System.Drawing.Size(26, 13);
             this.label8.TabIndex = 19;
             this.label8.Text = "Unit";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cb_Units
+            // 
+            this.cb_Units.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cb_Units.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_Units.DropDownWidth = 30;
+            this.cb_Units.FormattingEnabled = true;
+            this.cb_Units.Items.AddRange(new object[] {
+            "Select Unit ..."});
+            this.cb_Units.Location = new System.Drawing.Point(111, 33);
+            this.cb_Units.Name = "cb_Units";
+            this.cb_Units.Size = new System.Drawing.Size(80, 21);
+            this.cb_Units.TabIndex = 20;
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(100, 173);
+            this.dataGridView1.ColumnHeadersVisible = false;
+            this.dataGridView1.Location = new System.Drawing.Point(74, 173);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(640, 127);
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 30;
+            this.dataGridView1.Size = new System.Drawing.Size(696, 127);
             this.dataGridView1.TabIndex = 31;
             // 
             // InvoiceForm

@@ -75,7 +75,7 @@ namespace InvoiceForm
         private void cb_Stores_SelectedIndexChanged(object sender, EventArgs e)
         {
             
-            var items = db.Store_Items.Include(a=>a.Item).Where(a=>a.StoreID == cb_Stores.SelectedIndex + 1).Select(i=> new { i.ItemID, i.Item.ItemName });
+            var items = db.Store_Items.Include(a=>a.Item).Where(a=>a.StoreID == cb_Stores.SelectedIndex + 1).Select(i=> new { i.ItemID, i.Item.ItemName }).Distinct();
             cb_Items.DataSource = items.ToList();
             cb_Items.DisplayMember = "ItemName";
             cb_Items.ValueMember = "ItemID";

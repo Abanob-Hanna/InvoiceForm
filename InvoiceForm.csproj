@@ -73,6 +73,18 @@
     <Compile Include="Migrations\202006202144019_intitial.designer.cs">
       <DependentUpon>202006202144019_intitial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006250000546_initial2.cs" />
+    <Compile Include="Migrations\202006250000546_initial2.designer.cs">
+      <DependentUpon>202006250000546_initial2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006282228359_initial3.cs" />
+    <Compile Include="Migrations\202006282228359_initial3.designer.cs">
+      <DependentUpon>202006282228359_initial3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006282332007_initial4.cs" />
+    <Compile Include="Migrations\202006282332007_initial4.designer.cs">
+      <DependentUpon>202006282332007_initial4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,6 +96,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006202144019_intitial.resx">
       <DependentUpon>202006202144019_intitial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006250000546_initial2.resx">
+      <DependentUpon>202006250000546_initial2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006282228359_initial3.resx">
+      <DependentUpon>202006282228359_initial3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006282332007_initial4.resx">
+      <DependentUpon>202006282332007_initial4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

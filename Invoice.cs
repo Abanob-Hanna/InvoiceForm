@@ -11,6 +11,7 @@ namespace InvoiceForm
     public class Invoice
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int InvoiceID { get; set; }
         [ForeignKey("Store")]
         public int StoreID { get; set; }
